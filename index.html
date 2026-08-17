@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>仙缘 · 美术资产库</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="brand">
+      <h1>仙缘</h1>
+      <p>美术资产库 · 网页版</p>
+    </div>
+    <div class="tree" id="tree"></div>
+  </aside>
+  <main class="main">
+    <div class="topbar">
+      <span class="mobile-toggle" id="mtoggle">☰</span>
+      <div class="search">
+        <span class="si">🔍</span>
+        <input id="s-input" type="text" placeholder="搜索图片 / 笔记 / 目录…" autocomplete="off">
+        <div class="sresults" id="s-results"></div>
+      </div>
+      <div class="breadcrumb" id="breadcrumb"></div>
+    </div>
+    <div class="content" id="content"></div>
+  </main>
+</div>
+<div class="lightbox" id="lightbox">
+  <span class="close" id="lb-close">×</span>
+  <span class="nav prev" id="lb-prev">‹</span>
+  <img id="lb-img" src="" alt="">
+  <span class="nav next" id="lb-next">›</span>
+  <div class="cap" id="lb-cap"></div>
+</div>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
